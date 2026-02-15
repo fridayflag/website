@@ -1,0 +1,12 @@
+@use "@/styles/theme/palette.module.scss" as palette;
+
+@mixin card-solid {
+  background-color: palette.$card-bg;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+@mixin card-dashed {
+  border: 1px dashed palette.$divider;
+  padding: 1rem;
+}

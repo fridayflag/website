@@ -1,0 +1,43 @@
+@use "@/styles/theme/palette.module.scss" as palette;
+@use "@/styles/theme/mixins.module.scss" as mixins;
+
+.root {
+  $logo-size: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .project {
+    @include mixins.card-dashed;
+  
+    display: grid;
+    grid-template-columns: $logo-size 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+  }  
+
+  .logo {
+    max-width: $logo-size;
+    max-height: $logo-size;
+    opacity: 0.7;
+  }
+}
+
+.headline {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  grid-column: span 2;
+}
+
+.description {
+  font-size: 0.75rem;
+  grid-column: span 2;
+  color: palette.$secondary-text;
+}
+
+.links {
+  font-size: 0.875rem;
+  padding-block-start: 0.5rem;
+  // color: palette.$secondary-text;
+}

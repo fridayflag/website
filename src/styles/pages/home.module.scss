@@ -1,0 +1,31 @@
+@use "@/styles/theme/palette.module.scss";
+
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 640px;
+  padding: 2rem 2rem 4rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.heading1 {
+  color: palette.$friday;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.ps1 {
+  color: turquoise;
+}
+
+.tagline {
+  color: palette.$secondary-text;
+  margin-bottom: 3rem;
+}

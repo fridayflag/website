@@ -1,0 +1,57 @@
+@use "@/styles/theme/palette.module.scss" as palette;
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  $block-spacing: 1rem;
+  padding-block: $block-spacing;
+  gap: $block-spacing;
+
+  h2 {
+    color: palette.$secondary-text;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  hr {
+    grid-column: 1 / -1;
+    width: 100%;
+    border-top: 1px dashed palette.$divider;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 0 -1px;
+    color: transparent;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-top: 0.25rem;
+  }
+}
+
+.contributorsSection > ul,
+.portfolioSection > ul {
+  padding-block: 0.5rem;
+}
+
+.synopsisSection,
+.portfolioSection,
+.contributorsSection {
+  grid-column: span 12;
+}
+
+.nameSection,
+.mottoSection {
+  grid-column: span 6;
+}
+
+.logoSection {
+  grid-column: span 2;
+}
