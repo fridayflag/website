@@ -1,5 +1,6 @@
 @use "@/styles/theme/palette.module.scss" as palette;
 @use "@/styles/theme/mixins.module.scss" as mixins;
+@use "@/styles/theme/breakpoints.module.scss" as breakpoints;
 
 .root {
   $logo-size: 24px;
@@ -21,6 +22,10 @@
     max-height: $logo-size;
     opacity: 0.7;
   }
+
+  @media (max-width: breakpoints.$sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .headline {
@@ -39,5 +44,5 @@
 .links {
   font-size: 0.875rem;
   padding-block-start: 0.5rem;
-  // color: palette.$secondary-text;
+  // color: palette.$link;
 }

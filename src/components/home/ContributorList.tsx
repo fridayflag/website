@@ -16,14 +16,15 @@ export function ContributorList(props: HTMLAttributes<HTMLUListElement>) {
             {contributor.name}
             <span className={styles.links}>
               {contributor.github && (
-                <a
+                <Link
+                  noIcon
                   aria-label={`${contributor.name} on GitHub`}
                   href={`https://github.com/${contributor.github.slice(1)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <GitHub className={styles.githubSvg} aria-hidden="true" />
-                </a>
+                </Link>
               )}
               {contributor.blog && (
                 <Link

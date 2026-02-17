@@ -7,13 +7,6 @@
   padding-block: $block-spacing;
   gap: $block-spacing;
 
-  h2 {
-    color: palette.$secondary-text;
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-  }
-
   p {
     margin: 0;
   }
@@ -50,8 +43,4 @@
 .nameSection,
 .mottoSection {
   grid-column: span 6;
-}
-
-.logoSection {
-  grid-column: span 2;
 }

@@ -1,0 +1,8 @@
+@use "@/styles/theme/palette.module.scss" as palette;
+
+.root {
+  color: palette.$secondary-text;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}

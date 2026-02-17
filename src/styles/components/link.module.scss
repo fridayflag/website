@@ -1,20 +1,23 @@
+@use "@/styles/theme/palette.module.scss" as palette;
+
 .root {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   gap: 0.325em;
   text-decoration: none;
-
+  
   &,
+  &:link,
   &:visited {
-    color: inherit;
+    color: palette.$link;
   }
 
   &:hover {
     text-decoration: underline;
   }
 
-  svg {
+  .linkIcon {
     height: 0.875em;
   }
 }

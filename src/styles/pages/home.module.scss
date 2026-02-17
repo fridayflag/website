@@ -15,17 +15,24 @@
 }
 
 .heading1 {
-  color: palette.$friday;
+  // color: palette.$friday;
+  color: palette.$accent-text;
   display: block;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
 }
 
 .ps1 {
-  color: turquoise;
+  // color: turquoise;
+  color: palette.$friday;
 }
 
 .tagline {
-  color: palette.$secondary-text;
+  // color: palette.$secondary-text;
+  color: palette.$accent-text;
   margin-bottom: 3rem;
+}
+
+.homeLink {
+  text-decoration: none;
 }

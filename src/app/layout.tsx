@@ -1,11 +1,18 @@
 import type { PropsWithChildren } from "react"
 import { Cabin } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import "@/styles/main.scss";
 
 const cabin = Cabin({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-cabin',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-inter',
 })
 
 export default function DashboardLayout(props: PropsWithChildren) {
