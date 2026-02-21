@@ -9,15 +9,12 @@ const cabin = Cabin({
   variable: '--font-cabin',
 })
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-inter',
-})
-
 export default function DashboardLayout(props: PropsWithChildren) {
   return (
     <html lang="en" className={cabin.className}>
+      <head>
+        <title>--friday</title>
+      </head>
       <body>
         <main>{props.children}</main>
       </body>
